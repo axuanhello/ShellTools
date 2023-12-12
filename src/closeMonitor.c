@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
         SetSuspendState(FALSE, FALSE, FALSE);
     }
     else {
-        printf("Monitor will be closed in %d second%s.\n", second,pluralSuffix);
+        printf("Monitor will be turned off in %d second%s.\n", second,pluralSuffix);
         Sleep(second * 1000);
         PostMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
     }
